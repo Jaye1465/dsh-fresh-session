@@ -1,0 +1,7 @@
+# dsh-fresh-session: one Host row plus its Client half.
+- insert:
+    - id: fresh-session
+      name: 'dsh-fresh-session'
+      config:
+        path: /__fresh-session
+        diagnostics: false

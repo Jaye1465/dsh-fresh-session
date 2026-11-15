@@ -1,0 +1,55 @@
+{
+  "name": "dsh-fresh-session",
+  "version": "0.2.0",
+  "description": "DSH Web/Desktop plugin: New Session creates a genuinely fresh Session from the current preset and model allowlist instead of reusing a blank shell.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "Jaye1465",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaye1465/dsh-fresh-session.git"
+  },
+  "homepage": "https://github.com/Jaye1465/dsh-fresh-session#readme",
+  "bugs": {
+    "url": "https://github.com/Jaye1465/dsh-fresh-session/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "subagent",
+    "agent-preset"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}

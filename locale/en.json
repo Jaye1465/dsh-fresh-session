@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Fresh new sessions",
+    "description": "New Session creates a genuinely new session composed from the current preset and model allowlist instead of reusing a blank shell; the unsent draft is carried over and the replaced blank is archived. Started sessions are untouched."
+  }
+}
